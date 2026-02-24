@@ -18,7 +18,7 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 
 
 
-// app.use('/jobs',require("./routes/jobsRoutes"))
+app.use('/users',require("./routes/usersRoutes"))
 
 
 mongoose.connection.once('open', () => {
